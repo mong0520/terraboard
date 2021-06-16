@@ -115,6 +115,11 @@ The precedence of configurations is as described below.
 |`--aws-external-id` | `AWS_EXTERNAL_ID` | `aws.external-id` | External ID to use when assuming role | - |
 |`--key-prefix` | `AWS_KEY_PREFIX` | `aws.key-prefix` | AWS Key Prefix | - |
 |`--file-extension` | `AWS_FILE_EXTENSION` | `aws.file-extension` | File extension(s) of state files. Use multiple CLI flags or a comma separated list ENV variable | .tfstate |
+|`--aws-region` | `AWS_REGION` | `aws.region` | AWS region | - |
+|`--aws-endpoint` | `AWS_ENDPOINT` | `aws.endpoint` | Custom AWS endpoint | - |
+|`--no-locks` | `TERRABOARD_NO_LOCKS` | `provider.no-locks` | Disable locks support from Terraboard (useful for S3 compatible providers like MinIO) | false |
+|`--no-versioning` | `TERRABOARD_NO_VERSIONING` | `provider.no-versioning` | Disable versioning support from Terraboard (useful for S3 compatible providers like MinIO) | false |
+|`--force-path-style` | `AWS_FORCE_PATH_STYLE` | `aws.s3.force-path-style` | Force path style S3 bucket calls. | false |
 |`--base-url` | `TERRABOARD_BASE_URL` | `web.base-url` | Base URL | / |
 |`--logout-url` | `TERRABOARD_LOGOUT_URL` | `web.logout-url` | Logout URL | - |
 |`--tfe-address` | `TFE_ADDRESS` | `tfe.tfe-address` | Terraform Enterprise address for states access | - |
